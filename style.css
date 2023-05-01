@@ -1,0 +1,22 @@
+body {
+    background-color: darkslategrey;
+    color: white;
+    font-family: 'Alkatra', cursive;
+}
+
+p{
+    color: beige;
+}
+
+h1{
+    color: blanchedalmond;
+    font-size: x-large;
+}
+
+h5{
+    color: lightslategray;
+}
+
+img{
+    width: 500px;
+}

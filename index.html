@@ -1,0 +1,127 @@
+<!-- DOCTYPe le dice al navegador que este archivo es tipo html-->
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Info para el navegador y extras -->
+    <head>
+        <!-- Titulos -->
+        <title> Adriana Hernandez Gasca </title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+
+    </head>
+
+    <!-- Dentro del body(cuerpo) vamos a poner lo que el usuario ve -->
+    <body>
+
+        <h1> Web sobre Libros </h1>
+        <main>
+            <h2> Imagenes de Libros </h2>
+            <!-- Atributo src: source, de donde viene -->
+            <img src="https://libreriapensar.com/wp-content/uploads/2020/09/hushushsaga.png" >
+            
+
+            <!-- Listas -->
+            <h3> Recomendaciones de libros </h3>
+            <div> <!-- Elemento div (división de otro elemento) -->
+                
+                <h4> Libros de Fantasia </h4>
+                <!-- em: elemento para letra cursiva -->
+                <p> <em> Lista hecha por Adriana </em> </p>
+
+                <!-- Lista no ordenada (ul)= unordered list -->
+                <ul>
+                    <li> Hush Hush </li> <!-- item de la lista -->
+                    <li> Pery Jackson </li> <!-- item de la lista -->
+                    <li> Elementos oscuros </li> <!-- item de la lista -->
+                </ul>
+                <img src="/practica html/imagenes/fin de los tiempos trilogia.jpg">
+
+                
+                
+            
+                <h4> Libros de Terror </h4>
+                <p> <em> Lista hecha por Adriana </em> </p>
+    
+                <!-- Lista ordenada (ol)= ordered list -->
+                <ol>
+                    <li> It </li>
+                    <li> Asylum </li>
+                    <li> El resplandor </li>
+    
+                </ol>
+                <img src="/practica html/imagenes/libro-abierto.png" alt="libro">
+            </div>
+
+            <!-- enlaces internos -->
+            <a href="#l1"> Hush Hush</a>
+            <a href="#l2"> El fin de los tiempos</a>
+            <a href="#l3"> Asylum</a>
+
+            <h3 id="#l1"> Hush Hush</h3>
+            <h5>Sinopsis</h5>
+            <p> Un juramento sagrado. Un ángel caído. Un amor prohibido. No te pierdas la primera parte de esta saga que te encantará... Nora Grey, una alumna aplicada en busca de una beca para la universidad, vive con su madre viuda en una granja a las afueras de Pórtland, Maine. Cuando Patch se convierte en su nuevo compañero de instituto, Nora siente a la vez atracción y repulsión hacia este extraño personaje que parece tener acceso a sus pensamientos. Luego se entera de que Patch es un ángel caído que quiere convertirse en humano. Nora está bajo su control, pero hay también otras fuerzas en juego y de repente se encuentra viviendo hechos inexplicables y en medio de una situación muy peligrosa.
+            </p>
+            
+
+            <h3 id="#l2"> El fin de los tiempos</h3>
+            <h5>Sinopsis</h5>
+            <p>  Después de Ángeles caídos y El mundo del mañana, sigue una tercera parte en la cual volvemos a encontrarnos con Penryn, una chica que sobrevive en un mundo devastado a raíz de la guerra que enfrenta a los ángeles. En esta atmósfera opresiva y violenta los seres humanos son meras víctimas, peones de un ajedrez aterrador. La larga odisea emprendida por Penryn en busca de su hermana parece haber llegado a su fin. Durante el trayecto, la relación con el ángel Raffe parece haberse definido. También encontramos a una Penryn más osada que no duda en empuñar la espada para defenderse. Sin embargo, aún quedan muchos y muy peligrosos retos que enfrentar, pues los riesgos acechan a cada paso.
+            </p>
+
+            <h3 id="#l3"> Asylum</h3>
+            <h5>Sinopsis</h5>
+            <p> Para Dan Crawford, el programa de verano para alumnos sobresalientes es una oportunidad única. Sus amigos nunca comprendieron su fascinación por la historia y la ciencia. Pero en el Colegio Preparatorio New Hampshire, esas preferencias están a la orden del día. Al llegar al lugar, se encuentra con que la residencia a la que debía ir ha sido cerrada, por lo cual todos los estudiantes se ven forzados a quedarse en Brookline, lo que solía ser un hospital psiquiátrico. Cuando Dan y sus nuevos amigos, Abby y Jordan, comienzan a explorar los pasillos y el sótano oculto del lugar, descubren secretos escalofriantes sobre lo que realmente ocurría allí. Secretos que los vinculan a ellos con el oscuro pasado del hospicio. Brookline nunca fue un instituto para enfermos mentales comunes: alojó tanto a psicópatas como a homicidas, sujetos sumamente peligrosos, y hay hechos y prácticas aberrantes que saldrán a luz. Con fotografías estremecedoras de hospicios reales, Asylum lleva al lector a los límites difusos entre el pasado y el presente, entre la amistad y la obsesión, entre la genialidad y la locura. Esta historia es una advertencia: la mente puede jugar malas pasadas cuando se ingresa a un submundo donde nada es lo que parece y se experimenta con ella. Siempre habrá consecuencias… y no serán nada agradables.
+            </p>
+
+            
+            <!-- Formulario con radio -->
+            <p>¿Te gusta leer?</p>
+            <!-- Opción cachorro -->
+            <label for="si">
+                <input id="si" type="radio"
+                value="Si" name="libro"> Si, me encanta 😍
+            </label>
+
+            <!-- Opción adulto -->
+            <label for="No">
+                <input id="No" type="radio"
+                value="No" name="libro"> No 😕
+            </label>
+
+            <p>¿Que tipo de genero te gusta leer?</p>
+            <!-- Formulario con checkbox -->
+            <label for="Fantasia">
+                <input id="Fantasia" type="checkbox"
+                value="Fantasia" name="tipo"> Fantasia ✨
+            </label>
+
+            <label for="Terror">
+                <input id="Terror" type="checkbox"
+                value="Terror" name="tipo"> Terror 🎃
+            </label>
+
+            <label for="Romance">
+                <input id="Romance" type="checkbox"
+                value="Romance" name="tipo"> Romance 💕
+            </label>
+
+            <label for="ciencia">
+                <input id="ciencia" type="checkbox"
+                value="ciencia" name="tipo"> Ciencia Ficción 💫
+            </label>
+
+            <!-- Enlaces externos -->
+            <p>En este <a href="http://lectura-adictiva.blogspot.com/p/imm.html" style="color: beige;">link</a> podras encontrar mas variedad de libros </p>
+
+
+        </main>
+        <footer>
+            <p>Pagina creada por Adriana en <a href="https://tecnolochicas.mx/" style="color: beige;">Tecnolochicas</a>  🙆‍♀️</p>
+        </footer>
+    </body>
+</html>
+
